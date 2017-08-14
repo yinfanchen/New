@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fairy.riven.aboutus.MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"/>
+    <ImageView
+        android:id="@+id/img_main_bg"
+        android:background="@drawable/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:drawableTop="@mipmap/cover_anniversary_icon"
+            android:text="纪念日"
+            android:drawablePadding="4dp"
+            android:textSize="11dp"
+            android:layout_weight="1"
+            android:onClick="ClickBtton"
+            android:id="@+id/btn_anniversary_icon"
+            />
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:drawableTop="@mipmap/cover_wish_icon"
+            android:text="情侣愿望"
+            android:textSize="11dp"
+            android:drawablePadding="4dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_wish_icon"
+            android:onClick="ClickBtton" />
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:drawableTop="@mipmap/cover_clock_icon"
+            android:text="情侣叫醒"
+            android:id="@+id/btn_clock_icon"
+            android:drawablePadding="4dp"
+            android:textSize="11dp"
+            android:layout_weight="1"
+            android:onClick="ClickBtton" />
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:drawableTop="@mipmap/cover_check_icon"
+            android:text="恋爱打卡"
+            android:id="@+id/btn_check_icon"
+            android:drawablePadding="4dp"
+            android:layout_weight="1"
+            android:textSize="11dp"
+            android:onClick="ClickBtton" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/video_btn_bg"
+        android:src="@drawable/btn_videoplay_play"
+        android:layout_marginBottom="75dp"
+        android:id="@+id/img_video_play_pause"
+        android:onClick="ClickBtton"
+        android:layout_gravity="right|bottom" />
+
+
+</FrameLayout>

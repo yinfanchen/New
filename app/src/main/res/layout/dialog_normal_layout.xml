@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFc0cb"
+            android:gravity="center" >
+
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffd0d0d0" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/positiveButton"
+                android:layout_width="114dp"
+                android:layout_height="40dp"
+                android:background="#FFc0cb"
+                android:textColor="#000"
+                android:gravity="center"
+                android:text="不想" />
+
+            <Button
+                android:id="@+id/negativeButton"
+                android:layout_width="114dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="20.0dip"
+                android:background="#FFA500"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text="么么哒" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
