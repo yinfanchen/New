@@ -31,7 +31,13 @@
         <activity android:name=".VideoPlayerActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".confessionActivity" />
-        <activity android:name=".IndexActivity"></activity>
+        <activity android:name=".IndexActivity" />
+        <activity android:name=".ComDayActivity"></activity>
+        <activity android:name=".DiaryMianActivity"
+            android:launchMode="singleTop">
+        </activity>
+        <activity android:name=".UpdateDiaryActivity"/>
+        <activity android:name=".AddDiaryActivity"/>
     </application>
 
 </manifest>

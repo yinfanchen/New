@@ -1,5 +1,6 @@
 package com.fairy.riven.aboutus;
 
+import android.content.Intent;
 import android.graphics.Matrix;
 import android.os.Handler;
 import android.os.Message;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity  {
             R.drawable.photo2, R.drawable.photo3, R.drawable.photo4,
             R.drawable.photo5, R.drawable.photo6 };
     private Random random = new Random();
+    
     private int mIndex = 0;
     boolean flag =true;
 
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity  {
     }
 
     public void ClickBtton(View view){
+        Intent intent =null;
         switch (view.getId()){
             case R.id.img_video_play_pause:
                 if (flag){
@@ -59,6 +62,8 @@ public class MainActivity extends AppCompatActivity  {
                 break;
             case R.id.btn_anniversary_icon:
                 //周年纪念日
+                intent = new Intent(MainActivity.this,DiaryMianActivity.class);
+                startActivity(intent);
                 break;
             case R.id.btn_wish_icon:
                 //愿望
@@ -67,6 +72,8 @@ public class MainActivity extends AppCompatActivity  {
                 //叫醒对方
                 break;
             case R.id.btn_check_icon:
+                intent =new Intent(MainActivity.this ,confessionActivity.class);
+                startActivity(intent);
                 break;
         }
 
